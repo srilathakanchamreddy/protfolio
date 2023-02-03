@@ -1,5 +1,5 @@
-
 @import 'config';
+@import 'menu';
 *{
     box-sizing: border-box;
 }
@@ -12,6 +12,13 @@ margin: 0;
 height: 100%;
 font-family:'Times New Roman', Times, serif ; 
 line-height: 1.5;
+}
+nav{
+    a{
+        text-decoration: none;
+        color: white;
+        
+    }
 }
 h1, h2, h3 {
     margin: 0;
@@ -43,10 +50,10 @@ main{
         color: white;
         text-decoration: none;
         padding: 0.5rem;
-            &:hover{
-                color:$secondary-color ;
-                @include easeOut();
-            }
+        &:hover{
+        color:$secondary-color ;
+        @include easeOut();
+        }
         }
     }
     &#home{
