@@ -1,4 +1,60 @@
-$color: red;
+
+@import 'config';
+*{
+    box-sizing: border-box;
+}
 body {
-background-color: $color;
+@include background();
+background-color: $primary-color;
+
+color: whitesmoke;
+margin: 0;
+height: 100%;
+font-family:'Times New Roman', Times, serif ; 
+line-height: 1.5;
+}
+h1, h2, h3 {
+    margin: 0;
+    span.secondary-color{
+        color:$secondary-color;
+    }
+    &.heading {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    &.sm-heading{
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding: 0.2rem 1rem;
+        margin-bottom: 2rem;
+        background: rgba(lighten($color: #333, $amount: 2),0.5);
+    }
+}
+header{
+    position: fixed;
+    width: 100%;
+}
+main{
+    padding: 3rem;
+    height: 100%;
+
+    .icons{
+        a{
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+            &:hover{
+                color:$secondary-color ;
+                @include easeOut();
+            }
+        }
+    }
+    &#home{
+        overflow: hidden ;
+        
+        h1{
+            margin-top:35vh ;
+            
+        }
+    }
 }
