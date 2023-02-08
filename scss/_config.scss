@@ -4,7 +4,10 @@ $background-image:url(../images/background.jpg);
 $background-opacity: 0.8;
 $background-image-show: true;
 @mixin easeOut{
-    transition: color 0.5s ease-out;
+    transition: color 1s ease-out;
+}
+@mixin animate{
+    transition: transform 0.3s ease-out;
 }
 @mixin background{
     @if $background-image-show{
