@@ -1,0 +1,62 @@
+@include mediasm{
+    .heading{
+        margin-top: 10vh;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+}
+@include mediamd{
+    main{
+        align-items: center;
+        text-align: center;
+        line-height: 1;
+    }
+    .heading{
+        margin-bottom: 20px;;
+    }
+    .menu-nav, .menu-branding{
+        float: none;
+        width: 100%;
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+    }
+    .menu-nav{
+        height: 75vh;
+        background: rgba($color: $primary-color, $alpha: 0.95);
+        transform: translate3d(100%,0,0);
+        .nav-item-link {
+            font-size: 24px;
+        }
+        @include animate();
+    }
+        .menu-branding{
+        height: 25vh;
+        transform: translate3d(-100%,0,0);
+        @include animate();
+        .potrait{
+            height: 100px;
+            width: 100px;
+        }
+    }
+    .bio-info{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'image'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+    }
+   
+    
+}
+@include medialg{
+   
+}
+@include mediaXl{
+    .projects{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
