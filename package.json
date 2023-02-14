@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://srilathakanchamreddy.github.io/protfolio",
+  "homepage": "https://srilathakanchamreddy.github.io/protfolio/",
   "dependencies": {
     "abbrev": "^1.1.1",
     "agent-base": "^6.0.2",
@@ -161,7 +161,7 @@
 
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist/"
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC"
